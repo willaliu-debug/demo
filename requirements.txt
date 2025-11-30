@@ -1,4 +1,14 @@
+# Web框架
+Flask>=3.0.0
+Flask-CORS>=4.0.0
+
 # 数据处理和分析依赖
 pandas>=2.0.0
 numpy>=1.24.0
 openpyxl>=3.1.0  # Excel文件读写支持
+
+# 文件处理
+Werkzeug>=3.0.0
+
+# 日期时间处理
+python-dateutil>=2.8.0

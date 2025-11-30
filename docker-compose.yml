@@ -9,6 +9,10 @@ services:
     container_name: metrics-report-app
     restart: unless-stopped
 
+    # 端口映射
+    ports:
+      - "5000:5000"
+
     # 挂载数据卷（如果需要访问本地数据文件）
     volumes:
       - ./data:/app/data
@@ -18,6 +22,7 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - PYTHONUNBUFFERED=1
+      - FLASK_ENV=production
 
     # 资源限制
     deploy:
