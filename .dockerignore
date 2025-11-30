@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+*.venv
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Data files (如果不需要打包到镜像中)
+*.xlsx
+*.xls
+*.csv
+data/
+
+# Documentation
+*.md
+!README.md
+
+# Logs
+*.log
+
+# Other
+Makefile
+.python-version
+docker-compose.yml

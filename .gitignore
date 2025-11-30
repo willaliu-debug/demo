@@ -50,9 +50,12 @@ htmlcov/
 # *.csv
 # data/
 
-# Reports
-*.md
+# Reports (生成的报告文件)
+*报告*.md
+
+# 保留文档文件
 !README.md
+!DEPLOYMENT.md
 
 # Logs
 *.log

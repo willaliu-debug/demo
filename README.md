@@ -35,13 +35,32 @@
 
 ## 安装步骤
 
-### 1. 克隆项目
+### 方式1: Docker 部署 (推荐)
 
 ```bash
-cd /Users/anker/demo
+# 1. 克隆项目
+git clone https://github.com/willaliu-debug/demo.git
+cd demo
+
+# 2. 使用 Docker Compose 启动
+docker-compose up -d
+
+# 3. 查看日志
+docker-compose logs -f
 ```
 
-### 2. 创建虚拟环境
+详细部署说明请查看 [DEPLOYMENT.md](DEPLOYMENT.md)
+
+### 方式2: 本地环境
+
+#### 1. 克隆项目
+
+```bash
+git clone https://github.com/willaliu-debug/demo.git
+cd demo
+```
+
+#### 2. 创建虚拟环境
 
 ```bash
 python3 -m venv venv
@@ -50,7 +69,7 @@ source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate  # Windows
 ```
 
-### 3. 安装依赖
+#### 3. 安装依赖
 
 ```bash
 pip install -r requirements.txt
